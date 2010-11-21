@@ -1,0 +1,16 @@
+var locals = locals || {};
+locals.PL = {
+locals: {
+     title: "FooBar",
+     foo: "foo",
+     bar: "bar"
+  }
+}
+locals.EN = {
+  locals: {
+            title: "EN FOOBAR"
+           }
+}
+exports.getLocal = function(local){
+  return locals[local];
+}
